@@ -8,6 +8,10 @@ Refer: https://vinayakabhat.medium.com/integrating-aws-secrets-manager-with-asp-
 
 Now, let’s look at how you can integrate AWS Secrets Manager with your ASP.NET Core application using a custom extension. We will define a custom configuration provider that pulls in secrets from AWS dynamically and injects them into your app’s configuration pipeline.
 
+**Install Nuget Package**: https://www.nuget.org/packages/AWS-SecretManagerService-Extensions/
+
+NuGet\Install-Package AWS-SecretManagerService-Extensions -Version 1.0.0
+
 **Set Up AWS Secrets Manager**
 
 Before anything, you’ll need to set up AWS Secrets Manager and store your sensitive data. For example, you can create a secret named my-app-secret with the following JSON structure:
